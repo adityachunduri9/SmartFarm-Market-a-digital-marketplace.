@@ -1,0 +1,42 @@
+smartfarm-market/
+├─ backend/
+│  ├─ package.json
+│  ├─ .env.example
+│  ├─ server.js
+│  ├─ routes/
+│  │  ├─ auth.js
+│  │  ├─ products.js
+│  │  └─ orders.js
+│  ├─ models/
+│  │  ├─ User.js
+│  │  ├─ Product.js
+│  │  └─ Order.js
+│  ├─ seed/
+│  │  └─ seed.js
+│  ├─ Dockerfile
+│  └─ README.md
+├─ frontend/
+│  ├─ package.json
+│  ├─ vite.config.js
+│  ├─ src/
+│  │  ├─ main.jsx
+│  │  ├─ App.jsx
+│  │  ├─ index.css
+│  │  ├─ components/
+│  │  │  ├─ Header.jsx
+│  │  │  ├─ ProductCard.jsx
+│  │  │  ├─ FarmerDashboard.jsx
+│  │  │  ├─ BuyerBrowse.jsx
+│  │  │  └─ PriceChart.jsx
+│  │  └─ api/
+│  │     └─ api.js
+│  ├─ public/
+│  │  └─ favicon.ico
+│  └─ README.md
+├─ price_predictor/
+│  ├─ predictor.py
+│  ├─ requirements.txt
+│  └─ sample_data.csv
+├─ README.md
+└─ slides/
+   └─ pitch_outline.md
