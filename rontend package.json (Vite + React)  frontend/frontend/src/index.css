@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fallback styling if tailwind not configured */
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
