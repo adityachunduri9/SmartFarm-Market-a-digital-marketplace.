@@ -1,0 +1,35 @@
+Install prerequisites: Node.js (18+), MongoDB (or use Atlas), Python 3.9+ (for predictor).
+
+Backend:
+
+cd backend
+
+create .env from .env.example and set MONGODB_URI, JWT_SECRET
+
+npm install
+
+npm run seed
+
+npm run dev (server at http://localhost:5000)
+
+Frontend:
+
+cd frontend
+
+npm install
+
+set VITE_API_URL=http://localhost:5000 in .env if needed
+
+npm run dev (frontend at http://localhost:5173 or port shown)
+
+Price predictor:
+
+cd price_predictor
+
+pip install -r requirements.txt
+
+python predictor.py train
+
+then python predictor.py 7 to predict for month 7 (illustrative)
+
+Use Postman / browser to test endpoints.
